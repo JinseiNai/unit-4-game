@@ -1,4 +1,53 @@
+.hero {
+    background: url(../images/zelda-hero.jpg) no-repeat center center;
+    background-size: 100% 110%;
+    height: 300px;
+    margin-bottom: 0;
+}
+
+.header {
+    text-align: center;
+    font-size: 80px;
+    margin-top: 30px;
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+    text-shadow: 3px 3px 15px black, 1px 1px 15px red;
+}
+
+.main-content {
+    background: url(../images/zelda-wallpaper.png) center center;
+    background-size: 100% 100%;
+}
+
+.row {
+    margin-right: 0;
+}
+
+.status {
+    text-align: center;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 10px rgb(14, 122, 189);
+}
+
+.gem {
+    text-align: center;
+}
+
 .rupee {
-    height: 200px;
-    width: 150px;
+    height: 150px;
+    width: 125px;
+    margin: 20px 0;
+}
+
+.footer {
+    text-align: center;
+    background-color: rgb(157, 165, 173);
+    border-top: 2px solid grey;
+}
+
+.footer p {
+    color: white;
+    font-size: .8em;
+    margin-top: 16px;
+    margin-bottom: 0;
 }

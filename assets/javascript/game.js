@@ -16,7 +16,7 @@ let game = {
     // Generate a random score user need to reach
     generateScore: function () {
         this.randomScore = Math.floor(Math.random() * 101) + 19;
-        console.log(this.randomScore); // Delete later
+        console.log('Get this score ' + this.randomScore); // Delete later
     },
 
     // Generate a random value for each rupee
@@ -32,6 +32,7 @@ let game = {
         console.log(this.rupees.value); // Delete later
     },
 }
+
 $(document).ready(function() {
     startGame();
 });
@@ -56,6 +57,13 @@ function scoreChecker() {
     }
 }
 
+function updateStatus() {
+    $('#collect').html(game.randomScore);
+    $('#yourScore').html(game.yourScore);
+    $('#wins').html(game.wins);
+    $('#losses').html(game.losses);
+}
+
 $('.rupee').on('click', function(e) {
     let target = $(e.target);
     if (target.is('.green')) {
@@ -77,5 +85,7 @@ $('.rupee').on('click', function(e) {
         game.yourScore += game.rupees.silverRupee;
         console.log('Added ' + game.rupees.silverRupee); // Delete later
     }
+    console.log('Your score is ' + game.yourScore);
     scoreChecker();
+    updateStatus();
 });
