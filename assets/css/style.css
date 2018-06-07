@@ -40,6 +40,10 @@
     margin: 20px 0;
 }
 
+.rupee:hover {
+    cursor: pointer;
+}
+
 .footer {
     text-align: center;
     background-color: rgb(157, 165, 173);
