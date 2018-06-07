@@ -35,6 +35,7 @@ let game = {
 
 $(document).ready(function() {
     startGame();
+    updateStatus();
 });
 
 function startGame() {
