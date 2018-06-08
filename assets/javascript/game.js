@@ -23,7 +23,11 @@ let game = {
     generateRupeeValue: function() {
         this.rupees.value = [];
         for (i = 0; i < 4; i++) {
-            this.rupees.value[i] = Math.floor(Math.random() * 12) + 1;
+            let randomValue = Math.floor(Math.random() * 12) + 1;
+            while (this.rupees.value.indexOf(randomValue) !== -1) {
+                randomValue = Math.floor(Math.random() * 12) + 1;
+            }
+            this.rupees.value[i] = randomValue;
         }
         this.rupees.greenRupee = this.rupees.value[0];
         this.rupees.yellowRupee = this.rupees.value[1];
